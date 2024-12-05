@@ -63,8 +63,8 @@ function agregarTarea(tarea, id, hecho, eliminar) {
 };
 
 function tareaRealizada(element) {
-    element.classlist.toggle(check);
-    element.classlist.toogle(uncheck);
+    element.classList.toggle(check);
+    element.classList.toogle(uncheck);
     element.parentNode.querySelector('.text').classlist.toogle(tachado);
     LIST[element.id].realizado = LIST[element.id].realizado ? false : true;
 };
